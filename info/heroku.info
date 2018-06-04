@@ -1,0 +1,16 @@
+heroku --help
+heroku --version
+
+1. login to heroku 
+heroku login
+//enter credential
+
+2. get ssh keys
+heroku keys:add
+//upload it 
+//you can remove it 
+
+3. communicate git to heroku
+ssh -v git@heroku.com
+//type yes
+//done 

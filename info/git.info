@@ -1,0 +1,40 @@
+
+//add git to your local repository
+git init //to start the local git
+git status // to show the local git status
+git add filename.extension //to add filename
+git add folder/  //to add folder
+//add .gitignore file to local repository and 
+// to add file -> filname.extension
+//to add folder -> folder/
+git add .gitignore //to add .gitignore file to local repository
+git commit -m 'unique message' //commit the repository
+
+
+//open gitbash to your local repository
+ls -al ~/.ssh //to list out ssh keys if any if not generate rsa key 
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com" //to generate the 
+//then public and private rsa keys will generated
+
+//adding ssh agents to look public private rsa keys
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_rsa
+
+//add ssh keys to github account
+1.login 
+2. goto setting under the profile
+3. goto SSH and GPG keys
+4. add title like: HPSpectre X360
+5. copy the contents of id_rsa.pub manually or 
+    run the below command - all contents will be copied to your clipboard
+    clip < ~/.ssh/id_rsa.pub
+6. paste to key  fields
+
+
+//to re work in new repository
+git init
+git add ....
+git commit -m "message"
+git remote rm origin
+git remote add origin git@github.com:username/myapp.git
+git push -u origin master
