@@ -38,3 +38,12 @@ git commit -m "message"
 git remote rm origin
 git remote add origin git@github.com:username/myapp.git
 git push -u origin master
+
+//for second time push
+1. see the status
+git status
+2. git add . //to add everything that showed in status 
+3. git remote add origin git@github.com:yourusername/yourrepository.git
+4. git push --set-upstream origin master
+// from now on you can use:
+git push

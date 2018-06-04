@@ -14,3 +14,9 @@ heroku keys:add
 ssh -v git@heroku.com
 //type yes
 //done 
+
+//to deploy app to heroku
+1. $heroku create
+2. $git push heroku
+3. $heroku open
+
